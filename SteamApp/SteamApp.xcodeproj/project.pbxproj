@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5FC30B22821CAA800A3FE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30B12821CAA800A3FE07 /* AppDelegate.swift */; };
+		B5FC30B42821CAA800A3FE07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30B32821CAA800A3FE07 /* SceneDelegate.swift */; };
+		B5FC30B62821CAA800A3FE07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30B52821CAA800A3FE07 /* ViewController.swift */; };
+		B5FC30B92821CAA800A3FE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FC30B72821CAA800A3FE07 /* Main.storyboard */; };
+		B5FC30BB2821CAAA00A3FE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FC30BA2821CAAA00A3FE07 /* Assets.xcassets */; };
+		B5FC30BE2821CAAA00A3FE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FC30BC2821CAAA00A3FE07 /* LaunchScreen.storyboard */; };
+		B5FC30C82821CAB900A3FE07 /* TopSellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30C52821CAB900A3FE07 /* TopSellerViewController.swift */; };
+		B5FC30C92821CAB900A3FE07 /* SpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30C62821CAB900A3FE07 /* SpecialViewController.swift */; };
+		B5FC30CA2821CAB900A3FE07 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30C72821CAB900A3FE07 /* TodoViewController.swift */; };
+		B5FC30CD2821CAC300A3FE07 /* NewReleasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30CB2821CAC300A3FE07 /* NewReleasesViewController.swift */; };
+		B5FC30CE2821CAC300A3FE07 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30CC2821CAC300A3FE07 /* Networking.swift */; };
+		B5FC30D32821CACB00A3FE07 /* GameDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30CF2821CACB00A3FE07 /* GameDescriptionViewController.swift */; };
+		B5FC30D42821CACB00A3FE07 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30D02821CACB00A3FE07 /* HomeViewController.swift */; };
+		B5FC30D52821CACB00A3FE07 /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30D12821CACB00A3FE07 /* ComingSoonViewController.swift */; };
+		B5FC30D62821CACB00A3FE07 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30D22821CACB00A3FE07 /* Games.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5FC30AE2821CAA800A3FE07 /* SteamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FC30B12821CAA800A3FE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5FC30B32821CAA800A3FE07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5FC30B52821CAA800A3FE07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5FC30B82821CAA800A3FE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5FC30BA2821CAAA00A3FE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5FC30BD2821CAAA00A3FE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5FC30BF2821CAAA00A3FE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FC30C52821CAB900A3FE07 /* TopSellerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopSellerViewController.swift; sourceTree = "<group>"; };
+		B5FC30C62821CAB900A3FE07 /* SpecialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialViewController.swift; sourceTree = "<group>"; };
+		B5FC30C72821CAB900A3FE07 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		B5FC30CB2821CAC300A3FE07 /* NewReleasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReleasesViewController.swift; sourceTree = "<group>"; };
+		B5FC30CC2821CAC300A3FE07 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		B5FC30CF2821CACB00A3FE07 /* GameDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDescriptionViewController.swift; sourceTree = "<group>"; };
+		B5FC30D02821CACB00A3FE07 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B5FC30D12821CACB00A3FE07 /* ComingSoonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
+		B5FC30D22821CACB00A3FE07 /* Games.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5FC30AB2821CAA800A3FE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5FC30A52821CAA800A3FE07 = {
+			isa = PBXGroup;
+			children = (
+				B5FC30B02821CAA800A3FE07 /* SteamApp */,
+				B5FC30AF2821CAA800A3FE07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5FC30AF2821CAA800A3FE07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5FC30AE2821CAA800A3FE07 /* SteamApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5FC30B02821CAA800A3FE07 /* SteamApp */ = {
+			isa = PBXGroup;
+			children = (
+				B5FC30B12821CAA800A3FE07 /* AppDelegate.swift */,
+				B5FC30B32821CAA800A3FE07 /* SceneDelegate.swift */,
+				B5FC30B52821CAA800A3FE07 /* ViewController.swift */,
+				B5FC30B72821CAA800A3FE07 /* Main.storyboard */,
+				B5FC30BA2821CAAA00A3FE07 /* Assets.xcassets */,
+				B5FC30BC2821CAAA00A3FE07 /* LaunchScreen.storyboard */,
+				B5FC30BF2821CAAA00A3FE07 /* Info.plist */,
+				B5FC30C62821CAB900A3FE07 /* SpecialViewController.swift */,
+				B5FC30C72821CAB900A3FE07 /* TodoViewController.swift */,
+				B5FC30C52821CAB900A3FE07 /* TopSellerViewController.swift */,
+				B5FC30CC2821CAC300A3FE07 /* Networking.swift */,
+				B5FC30CB2821CAC300A3FE07 /* NewReleasesViewController.swift */,
+				B5FC30D12821CACB00A3FE07 /* ComingSoonViewController.swift */,
+				B5FC30CF2821CACB00A3FE07 /* GameDescriptionViewController.swift */,
+				B5FC30D22821CACB00A3FE07 /* Games.swift */,
+				B5FC30D02821CACB00A3FE07 /* HomeViewController.swift */,
+			);
+			path = SteamApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5FC30AD2821CAA800A3FE07 /* SteamApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FC30C22821CAAA00A3FE07 /* Build configuration list for PBXNativeTarget "SteamApp" */;
+			buildPhases = (
+				B5FC30AA2821CAA800A3FE07 /* Sources */,
+				B5FC30AB2821CAA800A3FE07 /* Frameworks */,
+				B5FC30AC2821CAA800A3FE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteamApp;
+			productName = SteamApp;
+			productReference = B5FC30AE2821CAA800A3FE07 /* SteamApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5FC30A62821CAA800A3FE07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					B5FC30AD2821CAA800A3FE07 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B5FC30A92821CAA800A3FE07 /* Build configuration list for PBXProject "SteamApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5FC30A52821CAA800A3FE07;
+			productRefGroup = B5FC30AF2821CAA800A3FE07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5FC30AD2821CAA800A3FE07 /* SteamApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5FC30AC2821CAA800A3FE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FC30BE2821CAAA00A3FE07 /* LaunchScreen.storyboard in Resources */,
+				B5FC30BB2821CAAA00A3FE07 /* Assets.xcassets in Resources */,
+				B5FC30B92821CAA800A3FE07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5FC30AA2821CAA800A3FE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FC30B62821CAA800A3FE07 /* ViewController.swift in Sources */,
+				B5FC30C82821CAB900A3FE07 /* TopSellerViewController.swift in Sources */,
+				B5FC30D32821CACB00A3FE07 /* GameDescriptionViewController.swift in Sources */,
+				B5FC30D62821CACB00A3FE07 /* Games.swift in Sources */,
+				B5FC30B22821CAA800A3FE07 /* AppDelegate.swift in Sources */,
+				B5FC30CE2821CAC300A3FE07 /* Networking.swift in Sources */,
+				B5FC30D42821CACB00A3FE07 /* HomeViewController.swift in Sources */,
+				B5FC30B42821CAA800A3FE07 /* SceneDelegate.swift in Sources */,
+				B5FC30CD2821CAC300A3FE07 /* NewReleasesViewController.swift in Sources */,
+				B5FC30CA2821CAB900A3FE07 /* TodoViewController.swift in Sources */,
+				B5FC30D52821CACB00A3FE07 /* ComingSoonViewController.swift in Sources */,
+				B5FC30C92821CAB900A3FE07 /* SpecialViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5FC30B72821CAA800A3FE07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5FC30B82821CAA800A3FE07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5FC30BC2821CAAA00A3FE07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5FC30BD2821CAAA00A3FE07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5FC30C02821CAAA00A3FE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5FC30C12821CAAA00A3FE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5FC30C32821CAAA00A3FE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SteamApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "osy-sfsu.edu.SteamApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5FC30C42821CAAA00A3FE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SteamApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "osy-sfsu.edu.SteamApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5FC30A92821CAA800A3FE07 /* Build configuration list for PBXProject "SteamApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FC30C02821CAAA00A3FE07 /* Debug */,
+				B5FC30C12821CAAA00A3FE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FC30C22821CAAA00A3FE07 /* Build configuration list for PBXNativeTarget "SteamApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FC30C32821CAAA00A3FE07 /* Debug */,
+				B5FC30C42821CAAA00A3FE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5FC30A62821CAA800A3FE07 /* Project object */;
+}
