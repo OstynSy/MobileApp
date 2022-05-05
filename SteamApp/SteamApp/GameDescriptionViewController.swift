@@ -12,7 +12,7 @@ class GameDescriptionViewController: UIViewController{
 
 //    var stop: Stop?
 //    var times: Directions?
-    var specials: [Item] = []
+    var specials: Item?
     let networking = Networking()
     
 //    @IBOutlet weak var StationLabel:UILabel!

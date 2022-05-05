@@ -14,14 +14,22 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // iboutlet for image
     //@IBOutlet weak var DiscountLabel: UILabel!
     
+    
     let networking = Networking()
     var specials: [Item] = []
+    var buttonClick: String?
     
     override func viewDidLoad() {
         print("testing api call 1")
-        super.viewDidLoad()
+        if buttonClick != nil{
+            print("Recieved data form button", buttonClick)
+        }
+        else{
+            print("Failed to recieve data")
+        }
         tableView.delegate = self
         tableView.dataSource = self
+        super.viewDidLoad()
         tableView.register(SpecialCell.self, forCellReuseIdentifier: "SpecialCell")
         
         Task {
@@ -60,8 +68,6 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("NUMBER OF SPECIALS")
-        print(specials.count)
         return specials.count
     }
     
@@ -71,14 +77,14 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let PredictionsViewController = segue.destination as? GameDescriptionViewController else {
+        guard let GameDescriptionViewController = segue.destination as? GameDescriptionViewController else {
             return
         }
         guard let indexPath = sender as? IndexPath else {
             return
         }
         let special = specials[indexPath.row]
-//
+        GameDescriptionViewController.specials = special
     }
     
 }
