@@ -12,13 +12,9 @@
 		B5FC30B92821CAA800A3FE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FC30B72821CAA800A3FE07 /* Main.storyboard */; };
 		B5FC30BB2821CAAA00A3FE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FC30BA2821CAAA00A3FE07 /* Assets.xcassets */; };
 		B5FC30BE2821CAAA00A3FE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FC30BC2821CAAA00A3FE07 /* LaunchScreen.storyboard */; };
-		B5FC30C82821CAB900A3FE07 /* TopSellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30C52821CAB900A3FE07 /* TopSellerViewController.swift */; };
-		B5FC30C92821CAB900A3FE07 /* SpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30C62821CAB900A3FE07 /* SpecialViewController.swift */; };
 		B5FC30CA2821CAB900A3FE07 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30C72821CAB900A3FE07 /* TodoViewController.swift */; };
-		B5FC30CD2821CAC300A3FE07 /* NewReleasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30CB2821CAC300A3FE07 /* NewReleasesViewController.swift */; };
 		B5FC30CE2821CAC300A3FE07 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30CC2821CAC300A3FE07 /* Networking.swift */; };
 		B5FC30D32821CACB00A3FE07 /* GameDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30CF2821CACB00A3FE07 /* GameDescriptionViewController.swift */; };
-		B5FC30D52821CACB00A3FE07 /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30D12821CACB00A3FE07 /* ComingSoonViewController.swift */; };
 		B5FC30D62821CACB00A3FE07 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30D22821CACB00A3FE07 /* Games.swift */; };
 		B5FC30D82824452A00A3FE07 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC30D72824452A00A3FE07 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,13 +27,9 @@
 		B5FC30BA2821CAAA00A3FE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5FC30BD2821CAAA00A3FE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5FC30BF2821CAAA00A3FE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5FC30C52821CAB900A3FE07 /* TopSellerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopSellerViewController.swift; sourceTree = "<group>"; };
-		B5FC30C62821CAB900A3FE07 /* SpecialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialViewController.swift; sourceTree = "<group>"; };
 		B5FC30C72821CAB900A3FE07 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
-		B5FC30CB2821CAC300A3FE07 /* NewReleasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReleasesViewController.swift; sourceTree = "<group>"; };
 		B5FC30CC2821CAC300A3FE07 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		B5FC30CF2821CACB00A3FE07 /* GameDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDescriptionViewController.swift; sourceTree = "<group>"; };
-		B5FC30D12821CACB00A3FE07 /* ComingSoonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
 		B5FC30D22821CACB00A3FE07 /* Games.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		B5FC30D72824452A00A3FE07 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,15 +70,11 @@
 				B5FC30BA2821CAAA00A3FE07 /* Assets.xcassets */,
 				B5FC30BC2821CAAA00A3FE07 /* LaunchScreen.storyboard */,
 				B5FC30BF2821CAAA00A3FE07 /* Info.plist */,
+				B5FC30D22821CACB00A3FE07 /* Games.swift */,
+				B5FC30CC2821CAC300A3FE07 /* Networking.swift */,
 				B5FC30D72824452A00A3FE07 /* HomeViewController.swift */,
 				B5FC30C72821CAB900A3FE07 /* TodoViewController.swift */,
 				B5FC30CF2821CACB00A3FE07 /* GameDescriptionViewController.swift */,
-				B5FC30C62821CAB900A3FE07 /* SpecialViewController.swift */,
-				B5FC30C52821CAB900A3FE07 /* TopSellerViewController.swift */,
-				B5FC30CC2821CAC300A3FE07 /* Networking.swift */,
-				B5FC30CB2821CAC300A3FE07 /* NewReleasesViewController.swift */,
-				B5FC30D12821CACB00A3FE07 /* ComingSoonViewController.swift */,
-				B5FC30D22821CACB00A3FE07 /* Games.swift */,
 			);
 			path = SteamApp;
 			sourceTree = "<group>";
@@ -162,17 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FC30C82821CAB900A3FE07 /* TopSellerViewController.swift in Sources */,
 				B5FC30D32821CACB00A3FE07 /* GameDescriptionViewController.swift in Sources */,
 				B5FC30D62821CACB00A3FE07 /* Games.swift in Sources */,
 				B5FC30B22821CAA800A3FE07 /* AppDelegate.swift in Sources */,
 				B5FC30CE2821CAC300A3FE07 /* Networking.swift in Sources */,
 				B5FC30D82824452A00A3FE07 /* HomeViewController.swift in Sources */,
 				B5FC30B42821CAA800A3FE07 /* SceneDelegate.swift in Sources */,
-				B5FC30CD2821CAC300A3FE07 /* NewReleasesViewController.swift in Sources */,
 				B5FC30CA2821CAB900A3FE07 /* TodoViewController.swift in Sources */,
-				B5FC30D52821CACB00A3FE07 /* ComingSoonViewController.swift in Sources */,
-				B5FC30C92821CAB900A3FE07 /* SpecialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

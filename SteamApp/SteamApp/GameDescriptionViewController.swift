@@ -12,7 +12,7 @@ class GameDescriptionViewController: UIViewController{
 
 //    var stop: Stop?
 //    var times: Directions?
-    var specials: Item?
+    var game: Item?
     let networking = Networking()
     
 //    @IBOutlet weak var StationLabel:UILabel!
@@ -29,10 +29,8 @@ class GameDescriptionViewController: UIViewController{
 
         Task {
             do {
-                let Welcome = try await networking.fetchGames()
                 await MainActor.run {
-                    // labels
-
+                    title = game?.name
                 }
             } catch {
                 print(error)

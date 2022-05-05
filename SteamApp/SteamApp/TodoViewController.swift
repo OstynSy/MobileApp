@@ -17,16 +17,12 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     let networking = Networking()
     var specials: [Item] = []
+    var topSellers: [Item] = []
+    var newReleases: [Item] = []
+    var comingSoon: [Item] = []
     var buttonClick: String?
     
     override func viewDidLoad() {
-        print("testing api call 1")
-        if buttonClick != nil{
-            print("Recieved data form button", buttonClick)
-        }
-        else{
-            print("Failed to recieve data")
-        }
         tableView.delegate = self
         tableView.dataSource = self
         super.viewDidLoad()
@@ -36,14 +32,17 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
             do {
                 let Welcome = try await networking.fetchGames()
                 await MainActor.run {
-                    print("=====TESTING API=====")
+                    title = buttonClick
                     specials = Welcome.specials.items
-                    print(Welcome.specials.name)
-                    print(Welcome.specials.items[0])
-                    print(Welcome.comingSoon.name)
-                    print(Welcome.comingSoon.items[0].name)
+                    topSellers = Welcome.topSellers.items
+                    newReleases = Welcome.newReleases.items
+                    comingSoon = Welcome.comingSoon.items
+                    
+//                    print(Welcome.specials.name)
+//                    print(Welcome.specials.items[0])
+//                    print(Welcome.comingSoon.name)
+//                    print(Welcome.comingSoon.items[0].name)
 
-                    //stops = routeConfig.route.stop
                     tableView.reloadData()
                 }
             } catch {
@@ -58,7 +57,18 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
             return UITableViewCell()
         }
 
-        cell.textLabel?.text = specials[indexPath.row].name
+        switch buttonClick{
+        case "Specials":
+                cell.textLabel?.text = specials[indexPath.row].name
+        case "TopSellers":
+                cell.textLabel?.text = topSellers[indexPath.row].name
+        case "NewReleases":
+                cell.textLabel?.text = newReleases[indexPath.row].name
+        case "ComingSoon":
+                cell.textLabel?.text = comingSoon[indexPath.row].name
+        default:
+            print("ERROR")
+        }
         //cell.Discount.text = "test"
         //OGPrice.text = String(specials[indexPath.row].finalPrice)
         // image of game
@@ -68,12 +78,24 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return specials.count
+        switch buttonClick{
+        case "Specials":
+            return specials.count
+        case "TopSellers":
+            return topSellers.count
+        case "NewReleases":
+            return newReleases.count
+        case "ComingSoon":
+            return comingSoon.count
+        default:
+            print("ERROR")
+        }
+        return 0
     }
     
     //segue to description of game
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ToDescriptionSeque", sender: indexPath)
+        performSegue(withIdentifier: "ToDescriptionSegue", sender: indexPath)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -83,8 +105,21 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         guard let indexPath = sender as? IndexPath else {
             return
         }
-        let special = specials[indexPath.row]
-        GameDescriptionViewController.specials = special
+        
+        switch buttonClick{
+        case "Specials":
+            GameDescriptionViewController.game = specials[indexPath.row]
+        case "TopSellers":
+            GameDescriptionViewController.game = topSellers[indexPath.row]
+        case "NewReleases":
+            GameDescriptionViewController.game = newReleases[indexPath.row]
+        case "ComingSoon":
+            GameDescriptionViewController.game = comingSoon[indexPath.row]
+        default:
+            print("ERROR")
+        }
+
+
     }
     
 }
