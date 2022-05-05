@@ -13,19 +13,8 @@ class GameDescriptionViewController: UIViewController{
 //    var stop: Stop?
 //    var times: Directions?
     var game: Item?
-    let networking = Networking()
-    
-//    @IBOutlet weak var StationLabel:UILabel!
-//    @IBOutlet weak var DirectionLabel:UILabel!
-//    @IBOutlet weak var MinutesLabel1:UILabel!
-//    @IBOutlet weak var MinutesLabel2:UILabel!
-//    @IBOutlet weak var MinutesLabel3:UILabel!
     
     override func viewDidLoad() {
-        
-//        guard let specials = specials else {
-//            return
-//        }
 
         Task {
             do {
