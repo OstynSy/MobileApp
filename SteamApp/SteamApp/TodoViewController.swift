@@ -4,6 +4,28 @@ class SpecialCell: UITableViewCell {
     
 }
 
+//https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift
+extension UIImageView {
+    func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
+        contentMode = mode
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard
+                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+                else { return }
+            DispatchQueue.main.async() { [weak self] in
+                self?.image = image
+            }
+        }.resume()
+    }
+    func downloaded(from link: String, contentMode mode: ContentMode = .scaleAspectFit) {
+        guard let url = URL(string: link) else { return }
+        downloaded(from: url, contentMode: mode)
+    }
+}
+
 class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     //@IBOutlet weak var OGPrice: UILabel!
@@ -37,11 +59,6 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
                     topSellers = Welcome.topSellers.items
                     newReleases = Welcome.newReleases.items
                     comingSoon = Welcome.comingSoon.items
-                    
-//                    print(Welcome.specials.name)
-//                    print(Welcome.specials.items[0])
-//                    print(Welcome.comingSoon.name)
-//                    print(Welcome.comingSoon.items[0].name)
 
                     tableView.reloadData()
                 }
