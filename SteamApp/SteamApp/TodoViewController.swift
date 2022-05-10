@@ -1,9 +1,5 @@
 import UIKit
 
-class SpecialCell: UITableViewCell {
-    
-}
-
 //https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
@@ -26,17 +22,13 @@ extension UIImageView {
     }
 }
 
+class SpecialCell: UITableViewCell {
+}
+
 class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    //@IBOutlet weak var OGPrice: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    //@IBOutlet weak var DiscPrice: UILabel!
-    //@IBOutlet weak var Discount: UILabel!
-    
-    // iboutlet for image
-    //@IBOutlet weak var DiscountLabel: UILabel!
-    
-    
+
     let networking = Networking()
     var specials: [Item] = []
     var topSellers: [Item] = []
@@ -45,9 +37,10 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var buttonClick: String?
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        super.viewDidLoad()
+        
         tableView.register(SpecialCell.self, forCellReuseIdentifier: "SpecialCell")
         
         Task {
@@ -59,7 +52,6 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
                     topSellers = Welcome.topSellers.items
                     newReleases = Welcome.newReleases.items
                     comingSoon = Welcome.comingSoon.items
-
                     tableView.reloadData()
                 }
             } catch {
@@ -73,16 +65,19 @@ class TodoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SpecialCell") as? SpecialCell else {
             return UITableViewCell()
         }
-
+        
         switch buttonClick{
         case "Specials":
-                cell.textLabel?.text = specials[indexPath.row].name
+            cell.textLabel?.text = specials[indexPath.row].name
+            //cell.setName(name: test)
+//            cell.discPercent?.text = String(specials[indexPath.row].discountPercent) ?? ""
+            //cell.headerImage.downloaded(from: specials[indexPath.row].smallCapsuleImage)
         case "TopSellers":
-                cell.textLabel?.text = topSellers[indexPath.row].name
+            cell.textLabel?.text = topSellers[indexPath.row].name
         case "NewReleases":
-                cell.textLabel?.text = newReleases[indexPath.row].name
+            cell.textLabel?.text = newReleases[indexPath.row].name
         case "ComingSoon":
-                cell.textLabel?.text = comingSoon[indexPath.row].name
+            cell.textLabel?.text = comingSoon[indexPath.row].name
         default:
             print("ERROR")
         }
