@@ -23,3 +23,5 @@ description/developer/controller support/  of game
 strike through original price
 search
 wishlist
+
+![wireframes](https://user-images.githubusercontent.com/58492143/167958649-c61eb520-0787-4704-88e6-aac0c633292f.jpg)
