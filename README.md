@@ -1,6 +1,5 @@
 # MobileApp
 
-SteamCheck
 SteamCheck is an ios application to easily check games that are 
 on sale, coming soon, top sellers, and new releases. The app 
 displays prices, discounts, and expiration of the discount.
